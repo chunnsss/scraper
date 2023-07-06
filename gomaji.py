@@ -34,3 +34,8 @@ for i in range(18):
     ls1.extend(gomaji(url))
 
 print(ls1)
+
+import pandas as pd
+
+df=pd.DataFrame(ls1,columns=['產品名稱','描述','價錢','連結'])
+df.to_csv('coupon1.csv')
